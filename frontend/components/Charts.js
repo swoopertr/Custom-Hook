@@ -2,9 +2,10 @@ import React from "react";
 import Chart from "./Chart";
 
 const Charts = ({ coinData }) => {
+  
   return (
     <div className="charts">
-      {coinData.map(coin => (
+      {coinData.length >0 && coinData && coinData.map(coin => (
         <div className="chart__container" key={coin.name}>
           <h2 className="coin__title">{coin.name}</h2>
           <h4 className="coin__symbol">{coin.symbol}</h4>

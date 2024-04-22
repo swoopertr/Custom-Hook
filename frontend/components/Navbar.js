@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Navbar = (props) => {
   const toggleMode = e => {
+    console.log("props.geceModu: ", props.geceModu);
     e.preventDefault();
     props.setGeceModu(!props.geceModu);
   };
